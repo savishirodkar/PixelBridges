@@ -1,0 +1,73 @@
+nav a:hover {
+    cursor: pointer;
+}
+
+/* Change color on click */
+nav a.clicked {
+    color: blue;
+}
+
+.right-corner {
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    z-index: 100; /* Optional: Adjust the stacking order */
+}
+
+/* Add space to the body to prevent content from being hidden under the fixed header */
+body {
+    margin-top: 80px; /* Adjust this value based on your header's height */
+}
+
+main {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 700px; */
+}
+
+.oval-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 15px 25px; /* Increase padding for larger button */
+    background-color: hsl(204, 59%, 51%); /* Blue background */
+    border-radius: 999px; /* Oval shape */
+    color: white;
+    font: inherit;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: 18px; /* Increase font size */
+    cursor: pointer;
+}
+
+.oval-button svg {
+    width: 30px; /* Increase SVG icon size */
+    height: 30px; /* Increase SVG icon size */
+    margin-left: 10px; /* Adjust margin between text and icon */
+}
+
+.oval-button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .flex-item {
+    flex: 1;
+    padding: 10px;
+  }
+
+  
